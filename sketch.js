@@ -10,7 +10,8 @@ var myRec = new p5.SpeechRec('en-US', parseResult); // new P5.SpeechRec object
 		// graphics stuff:
 		createCanvas(800, 600);
 		background(255, 255, 255);
-		fill(0, 0, 0, 255);
+		fill(55,99,99);
+		noStroke();
 		x = width/2;
 		y = height/2;
 		dx = 0;
@@ -41,10 +42,10 @@ var myRec = new p5.SpeechRec('en-US', parseResult); // new P5.SpeechRec object
 		// recognition system will often append words into phrases.
 		// so hack here is to only use the last word:
 		var mostrecentword = myRec.resultString.split(' ').pop();
-		if(mostrecentword.indexOf("left")!==-1) { dx=-1;dy=0; }
-		else if(mostrecentword.indexOf("right")!==-1) { dx=1;dy=0; }
-		else if(mostrecentword.indexOf("up")!==-1) { dx=0;dy=-1; }
-		else if(mostrecentword.indexOf("down")!==-1) { dx=0;dy=1; }
+		if(mostrecentword.indexOf("left")!==-1) { fill(55,99,99);dx=-1;dy=0; }
+		else if(mostrecentword.indexOf("right")!==-1) { fill(0,99,99);dx=1;dy=0; }
+		else if(mostrecentword.indexOf("up")!==-1) { fill(115,99,99);dx=0;dy=-1; }
+		else if(mostrecentword.indexOf("down")!==-1) { fill(226,99,99);dx=0;dy=1; }
 		else if(mostrecentword.indexOf("clear")!==-1) { background(255); }
 		console.log(mostrecentword);
 	}
