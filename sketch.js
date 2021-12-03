@@ -10,7 +10,7 @@ var myRec = new p5.SpeechRec('en-US', parseResult); // new P5.SpeechRec object
 		// graphics stuff:
 		createCanvas(800, 600);
 		background(255, 255, 255);
-		fill(246,255,3);
+		fill(0);
 		noStroke();
 		x = width/2;
 		y = height/2;
