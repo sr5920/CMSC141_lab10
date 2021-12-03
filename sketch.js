@@ -20,7 +20,7 @@ var myRec = new p5.SpeechRec('en-US', parseResult); // new P5.SpeechRec object
 		// instructions:
 		textSize(20);
 		textAlign(LEFT);
-		text("draw: up, down, left, right, clear", 20, 20);
+		text("say something to draw: up, down, left, right, clear", 20, 20);
 
 		//myRec.onResult = parseResult; // now in the constructor
 		myRec.start(); // start engine
