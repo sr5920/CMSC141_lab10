@@ -12,4 +12,7 @@ I am extremely tired.
 
 ← `Eyes`: closed
 
-## This program helps you draw circles.
+## This program:
+
+← listens to your voice and follows your instructions
+← changes color with direction
